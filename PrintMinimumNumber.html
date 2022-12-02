@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var minimumNumber= (arr) =>
+        {
+            var temp;
+            for(var i=0;i<=arr.length;i++)
+            {
+                for(var j=i+1;j<=arr.length;j++)
+                {
+                    if(arr[i]>arr[j]){
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+                }
+                
+            }
+            return arr[0];
+        }
+        var arr1 = prompt('Enter length of array');
+        var num=[];
+        for (var i=0;i<arr1;i++)
+        {
+            num[i]=prompt('Enter numbers')
+        }
+        console.log(minimumNumber(num));
+        //  console.log(minimumNumber([11,44,33,55,66]));
+        
+    </script>
+</body>
+</html>
