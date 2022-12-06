@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+
+
+<html>
+<body>
+<!--3) Create an arrow function by which you have to find out average of given N numbers. -->
+
+<p id="demo"></p>
+
+ 
+<script type="text/javascript">
+var findAvg = (...args) =>{
+    let sum = 0;
+    let totalElement =  args.length;
+ for (var i = 0; i < args.length; i++) {
+
+      sum +=args[i];
+
+    }
+var average = sum/totalElement;
+ document.write("average is :" +average);
+
+}
+           
+findAvg(70,44,55,66,77);
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+  
